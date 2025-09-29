@@ -1,0 +1,20 @@
+1. Orice feature file incepe cu keyword-ul " Feature: " care va descrie in limbaj natural (free text)
+                care va fi functionalitatea de baza care va fi testata in fisierul curent
+
+2. Dupa ce scriem descrierea feature file-ului, urmeaza sa definim scenariile.
+        Exista doua tipuri scenarii definite de keyword-urile corespunzatoare:
+   - Scenario: este folosit atunci cand avem un test simplu cu un singur set de inputuri
+   - Scenario Outline:  este folosit atunci cand vrem sa rulam acelasi test cu exact aceiasi pasi de mai multe ori, dar cu inputuri diferite
+3. Urmatoarele keyword-uri sunt disponibile in gherkin
+   - Given = defineste un context general pentru scenariul testat. Cu alte cuvinte, indeplineste preconditiile de executare a testului.
+                In general, in given nu se pun pasi efectivi care sunt specifici pentru testul nostru si care reprezinta actiuni pe care sa le facem
+                cu scopul de a valida testul
+   - When  = defineste in general o actiune care trebuie facuta cu scopul de a ajunge in punctul in care evaluam functionalitatea
+   - And   = pas aditional care poate insoti fie un given, un when sau un then pentru a grupa o serie de pasi concomitenti care au legatura
+   - Then  = pas care defineste momentul in care facem validarea efectiva a scenariului pe care il testam
+
+4. Atunci cand aceeasi serie de first steps se repeta peste tot in fisierul de curent de tip feature,
+            putem sa ii adaugam impreuna la inceputul fisierului (dupa descrierea feature ului)
+            sub keyword ului Background
+
+
