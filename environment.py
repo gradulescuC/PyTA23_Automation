@@ -1,4 +1,6 @@
 from browser import Browser
+from pages.Inventory_page import Inventory_page
+from pages.Login_page import Login_page
 
 
 # before_all este un marcator care defineste o metoda ce contine cod
@@ -17,6 +19,8 @@ def before_all(context):
 								# - o constanta este o adresa de memorie identificata de numele constantei, care poate sa stocheze valori ce nu se pot schimba pe parcursul executiei programului
 			context.browser = Browser()
 			context.browser.maximise_window()
+			context.login_page = Login_page()
+			context.inventory_page = Inventory_page()
 
 
 def after_all(context):

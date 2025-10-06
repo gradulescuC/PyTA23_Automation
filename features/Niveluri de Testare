@@ -1,0 +1,25 @@
+Nivelurile de testare reprezinta etape diferite ale testarii
+        in functie de nivelul de dezvoltare al aplicatiei
+
+1. Unit Testing (Component Testing) - Testarea cele mai mici bucati functionale din cod (functii)
+2. Component Integration Testing - mai multe componente sunt legate si comunica intre ele
+            Testam faptul ca aceasta comunicare se face corect si in mod eficient
+3. System Testing - Se presupune ca toate componentele sunt complet integrate (legate intre ele)
+            iar noi facem ceea ce se numeste testare end to end (e2).
+            Adica, testam o functionalitate de la cap la coada
+            (de exemplu, pentru un test de checkout, o testare e2e ar insemna
+            sa verificam ce se intampla din momentul in care intram pe site
+            pana in momentul in care comanda este plasata)
+4. System Integration Testing - Comunicarea diverselor sisteme care comunica intre ele
+             pentru indeplinirea unor scenarii specifice de business
+             De exemplu, integrarea unui site de comert electronic cu paypall este un exemplu de integrare de sisteme
+5. UAT - Acceptance Testing - Momentul in care aplicatia este trecuta print-o ultima etapa de testare
+             pentru a evalua in ce masura indeplineste nevoile business-ului
+             - Alpha Testing - Testarea aplicatiei de catre o echipa separata de testare
+                        alta decat cea care a facut testarea la nivelurile anterioare
+                            pentru a evalua conformitatea cu cerintele de business
+                            si pentru a evalua functionalitatea aplicatiei cu un nivel de obiectivitate
+                            mai mare decat a avut echipa anterioara
+             - Beta Testing - Testarea aplicatiei de catre utilizatorul final sau de catre client
+                            pentru a evalua in ce masura aceasta ii indeplineste nevoile.
+

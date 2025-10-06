@@ -1,7 +1,5 @@
 from seleniumbase import Driver
 
-
-
 class Browser():
 
 			driverObject = Driver() # aici am instantiat un obiect din clasa Driver

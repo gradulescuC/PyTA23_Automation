@@ -1,0 +1,14 @@
+INTEGRATION                         UAT (User Acceptance Testing)
+https://www.int.aucedemo.com/       https://www.uat.aucedemo.com/
+standard_user_int                   standard_user_uat
+secret_sauce_int                    secret_sauce_uat
+
+----------------------------
+config.properties sau application.properties
+
+app_url_int="https://www.int.sucedemo.com/"
+app_url_uat="https://www.uat.sucedemo.com/"
+username_int="standard_user_int"
+username_uat="standard_user_uat"
+password_int="secret_sauce_int"
+password_uat="secret_sauce_uat"
