@@ -1,4 +1,5 @@
 from browser import Browser
+from pages.Base_page import Base_page
 from pages.Inventory_page import Inventory_page
 from pages.Login_page import Login_page
 
@@ -21,6 +22,7 @@ def before_all(context):
 			context.browser.maximise_window()
 			context.login_page = Login_page()
 			context.inventory_page = Inventory_page()
+			context.base_page = Base_page()
 
 
 def after_all(context):

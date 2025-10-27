@@ -1,0 +1,38 @@
+Pasi pentru creare repository:
+
+1. Creare repository pe github.com
+2. Creez proiectul pe local (adica pe laptopul personal, in pycharm)
+3. In terminal rulez comanda git init - marcheaza proiectul nostru sa fie repository
+                - in acel moment se creaza un folder numit ".git"
+                Acest folder este cel care marcheaza proiectul ca repository
+                Daca il stergem, proiectul nu va mai fi repository
+4. Scriem comanda git add . - ca sa adaugam modificarile pe staging
+5. Facem commit: git commit -m "initial commit"
+6. Legam repository-ul local de cel de pe github.com cu comanda
+            git remote add origin "url_repo_github"
+            git remote add origin "https://github.com/gradulescuC/PyTA23_Automation"
+7. Facem push: git push origin master
+
+ATENTIE!!!
+
+    Branch-ul implicit de regula este main, dar pot fi si situatii (de exemplu la bitbucket)
+    in care branch-ul implicit se numeste master
+
+    Daca totusi vrem sa avem un branch principal numit main, sau altceva, acesta trebuie creat
+
+
+LIBRARII DE INSTALAT:
+pip install selenium
+pip install behave
+pip install behave-html-formatter
+
+COMENZI DE RULARE:
+1. behave =≥ ruleaza toate scenariile din toate fisierele
+2. behave -f html -o behave-report.html
+- behave =≥ comanda standard de rulare a testelor bdd
+- -f =≥ optiune care indica solicitarea de a se genera rezultatul formatat
+- html =≥ optiune care indica tipul de formatare care sa se efectueze. in cazul nostru va fi html
+- -o =≥ optiune care indica solicitarea de a se genera rezultatul intr-un fisier extern (output) in loc sa se scrie in consola
+- behave-report.html =≥ numele raportului de executie. Numele nu este relevant si este flexibil la alegerea testerului
+             cu conditia sa reflecte faptul ca e un raport de executie.
+             Ce este important este extensia ".html"
