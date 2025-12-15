@@ -1,0 +1,5 @@
+pip install pytest pytest-html
+pytest tests_folder/ --html=report.html -----> pentru rulat testele cu raport de executie inclus
+
+
+
